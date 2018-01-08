@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Exe01">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{titulo}}</title>
+</head>
+<body>
+    <label for="titulo">Título da página: 
+        <input type="text" data-ng-model="titulo">
+    </label>
+    <br>
+    <label for="nome">Nome: 
+        <input type="text" data-ng-model="nome">
+    </label>
+    <p>Este é o seu nome com o filtro 'uppercase': {{nome | uppercase}}<br>Este é o seu nome com o filtro 'lowercase': {{nome | lowercase}}.</p>
+    <script src="../angular.min.js"></script>
+    <script>
+        angular.module('Exe01', []);
+    </script>
+</body>
+</html>

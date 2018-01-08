@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="Exe02">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exemplo 2</title>
+</head>
+<body>
+    <p>
+        <label for="string">Digite uma frase:
+            <input type="text" data-ng-model="string">
+        </label>
+    </p>
+    <p>Usando o filtro criado 'reverseString': {{string | reverseString}}.</p>
+    <p>Concatenando os filtros 'reverseString' e 'uppercase': {{string | reverseString | uppercase}}.</p>
+    <script src="../angular.min.js"></script>
+    <script src="02-exemplo02.js"></script>
+</body>
+</html>
